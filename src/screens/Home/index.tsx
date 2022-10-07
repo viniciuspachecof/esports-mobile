@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { Image, FlatList } from "react-native";
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { useNavigation } from '@react-navigation/native';
+
 import { styles } from "./styles";
-import logoImg from '../../assets/logo-nlw-esports.png';
-import { Heading } from "../../components/Heading";
 import { GameCard, GameCardProps } from "../../components/GameCard";
 import { Background } from "../../components/Background";
-import { useNavigation } from '@react-navigation/native'
+import { Heading } from "../../components/Heading";
 
+import logoImg from '../../assets/logo-nlw-esports.png';
 
 export function Home() {
   const [games, setGames] = useState<GameCardProps[]>([]);

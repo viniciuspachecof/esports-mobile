@@ -1,5 +1,6 @@
-import { styles } from './style';
 import { View, Text, ColorValue } from 'react-native';
+
+import { styles } from './style';
 import { THEME } from '../../theme';
 
 interface Props {
